@@ -5,4 +5,62 @@
 .container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 60px 20px 20px 20px;
+
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+.header-title {
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    color: #0ec8cb;
+}
+.header-title::before {
+    position: absolute;
+    content: 'who we are';
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 14px;
+    color: #898f99;
+    text-transform: uppercase;
+}
+.header-desc{
+    margin: 0 auto;
+    width: 500px;
+
+    font-size: 18px;
+    color: #999999;
+    text-transform: uppercase;
+}
+.categories {
+    display: flex;
+    margin-top: 60px;
+}
+.categories-item {
+    width: 230px;
+    height: 420px;
+    background: #f7f7f7;
+    padding: 56px 30px 0 30px;
+    border: 1px solid #ededed;
+    transition: all .55s;
+}
+.categories-item__title {
+    padding-bottom: 24px;
+    text-transform: uppercase;
+}
+.categories-item__desc{
+    text-align: justify;
+    font-size: 16px;
+}
+.categories-item:hover{
+    background: #0ec8cb;
+    border: 1px solid #0ec8cb;
+    cursor: pointer;
+    color: #ffffff;
 }
